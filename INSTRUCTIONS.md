@@ -6,22 +6,24 @@
 
 ### Setup
 
-There is no database component to base mode. All data is stored in an array on the server. Before you get started, add a few images to the `public/images` folder and modify the `server/modules/data.js` to include an `id`, `title`, `description` and `path for` each of your images. Each `id` should be a unique number (e.g. 1, 2, 3...).
+There is no database component to base mode. All data is stored in an array on the server. 
 
-Running the server code requires `nodemon`. If you don't already have `nodemon`, install it globally with `npm install nodemon --global`.
+[x] Before you get started, add a few images to the `public/images` folder and modify the `server/modules/data.js` to include an `id`, `title`, `description` and `path for` each of your images. Each `id` should be a unique number (e.g. 1, 2, 3...).
+
+[x] Running the server code requires `nodemon`. If you don't already have `nodemon`, install it globally with `npm install nodemon --global`.
 
 ```
 [x] npm install 
 [x] npm run server (if computer shutsdown, I'll have to spin up the server again)
 ```
 
-Now that the server is running, open a new terminal tab with `cmd + t` and start the react client app.
+[x] Now that the server is running, open a new terminal tab with `cmd + t` and start the react client app.
 
 ```
 [x] npm run client
 ```
 
-Between the server and client, you'll need two terminal tabs! Because we're using `nodemon`, both our client side and server side will automatically spin back up when changes are made!
+[x] Between the server and client, you'll need two terminal tabs! Because we're using `nodemon`, both our client side and server side will automatically spin back up when changes are made!
 
 ## BASE MODE
 
@@ -35,23 +37,23 @@ To practice passing values through `props` in React, you will build the gallery 
 
 ### Wireframes
 
-> NOTE: Images don't need to be 100px x 100px but it will be easier if the are all the same dimensions.
+> NOTE: Images don't need to be 100px x 100px but it will be easier if they are all the same dimensions.
 
 ![mockup one](wireframes/first-mockup.png)
 
 ![mockup two](wireframes/second-mockup.png)
 
 ### Task List
-- Use `axios` to retrieve (`GET`) data from to `/gallery` and store it in `App.js`.
-- Create a new **component** for the `GalleryList` and pass it the gallery data stored in `App` via `props`.
-    - Iterate (loop over) the list of gallery data
-    - Make GalleryItems
-- Create a new **component** called `GalleryItem.js` and pass it the individual gallery item via `props`. 
-    - Update the `GalleryList` to use this component to display an image.
-    - Swap the image with the description on click. Use [conditional rendering](https://reactjs.org/docs/conditional-rendering.html).
-    - Display the number likes for each item and include a like button.
-    - When the like button is clicked, use `Axios` to update (`PUT`) the like count `/gallery/like/:id`.
-    - Update the gallery each time a like button is clicked.
+[] - Use `axios` to retrieve (`GET`) data from to `/gallery` and store it in `App.js`.
+[] - Create a new **component** for the `GalleryList` and pass it the gallery data stored in `App` via `props`.
+    [] - Iterate (loop over) the list of gallery data
+    [] - Make GalleryItems
+[] - Create a new **component** called `GalleryItem.js` and pass it the individual gallery item via `props`. 
+    [] - Update the `GalleryList` to use this component to display an image.
+    [] - Swap the image with the description on click. Use [conditional rendering](https://reactjs.org/docs/conditional-rendering.html).
+    [] - Display the number likes for each item and include a like button.
+    [] - When the like button is clicked, use `Axios` to update (`PUT`) the like count `/gallery/like/:id`.
+    [] - Update the gallery each time a like button is clicked.
 
 
 
