@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import GalleryItem from '../GalleryItem/GalleryItem';
 
 class GalleryList extends Component {
 
@@ -11,11 +12,9 @@ photoGallery = () => {
         return(
             <>
                 <div>
-                    <h1>
-                        {this.props.galleryArray.map((photo) => {
-                            return <photoGallery photo={photo} />
-                        })};
-                    </h1>
+                    {this.props.galleryArray.map((photo) => {
+                        return <GalleryItem photo={photo}/>  
+                    })}
                 </div>
             </>
         )
