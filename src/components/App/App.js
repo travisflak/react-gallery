@@ -38,7 +38,7 @@ class App extends Component {
         </header>
         <br/>
         <p>
-        <GalleryList galleryArray = {this.state.imagesGallery} />
+        <GalleryList galleryArray = {this.state.imagesGallery} refreshImage = {this.getGalleryData}/>
         </p>
       </div>
     );

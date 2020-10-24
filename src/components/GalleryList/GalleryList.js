@@ -13,7 +13,7 @@ photoGallery = () => {
             <>
                 <div>
                     {this.props.galleryArray.map((photo) => {
-                        return <GalleryItem photo={photo}/>  
+                        return <GalleryItem photo={photo} refreshImage={this.props.refreshImage}/>  
                     })}
                 </div>
             </>
