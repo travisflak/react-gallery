@@ -1,7 +1,35 @@
 import React, { Component } from 'react';
+import axios from 'axios';
 import './App.css';
+import GalleryList from '../GalleryList/GalleryList';
 
 class App extends Component {
+
+  componentDidMount = () => {
+    console.log('mounted');
+    // call to get the gallaery data that are already stored
+    this.getGalleryData();
+  }
+
+  state = {
+    imagesGallery: [],
+  };
+
+  getGalleryData = () => {
+    console.log('in getGalleryData');
+    axios({
+      method: 'GET',
+      url: '/gallery'
+    }).then((response) => {
+      console.log('response', response.data);
+      this.setState({
+        imagesGallery: response.data
+      })
+    }).catch((error) => {
+      console.log('error', error);
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -10,7 +38,7 @@ class App extends Component {
         </header>
         <br/>
         <p>Gallery goes here</p>
-        <img src="images/goat_small.jpg"/>
+        <GalleryList galleryArray = {this.state.imagesGallery} />
       </div>
     );
   }
