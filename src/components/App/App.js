@@ -15,6 +15,7 @@ class App extends Component {
     imagesGallery: [],
   };
 
+  //GET request
   getGalleryData = () => {
     console.log('in getGalleryData');
     axios({
@@ -33,6 +34,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        {/* new class name for styling background image in App.css*/}
         <div className="container">
         <header className="App-header">
           <h1 className="App-title">Gallery of Images</h1>

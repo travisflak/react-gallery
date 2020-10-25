@@ -1,9 +1,8 @@
 .photoWrapper {
-    background-color: #fd92cf;
+  background-color: #fd92cf;
   color: rgb(46, 45, 133);
   padding: 20px;
   text-align: center;
-  text-decoration-style: wavy;
   display: inline-block;
   font-size: 16px;
   margin: 16px 8px;
@@ -20,5 +19,6 @@ button {
 }
 
 p {
-    background-color: rgb(219, 247, 248);
+    background-color: rgb(185, 255, 255);
+    opacity: .9;
 }

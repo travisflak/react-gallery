@@ -16,7 +16,7 @@ class GalleryItem extends Component {
             renderImage: !this.state.renderImage
         }); 
     }
-
+    //conditional rendering inside the renderImage function with an if else
     renderImage = () => { 
         if (this.state.renderImage) {
             return <img src={this.props.photo.path} alt={this.props.photo.description} onClick={this.switchToDescription}></img>
@@ -24,14 +24,14 @@ class GalleryItem extends Component {
             return <div className="description" onClick={this.switchToDescription}>{this.props.photo.description}</div>
         }
     }
-
+    //PUT 
     photoGallery = () => {
         axios({
             method: 'PUT',
             url: `/gallery/like/${this.props.photo.id}`
           }).then((response) => {
             console.log('response', response.data);
-            this.props.refreshImage();
+            this.props.refreshImage(); //page refreshes automatically without the user needing to refresh it
             this.setState({
               imagesGallery: response.data
             })

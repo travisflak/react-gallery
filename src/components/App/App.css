@@ -4,7 +4,7 @@
 
 .container {
   background-image: url('/images/flowers_design.png');
-  background-size: 100px 80px;
+  background-size: 80px 80px;
 }
 
 .App-header {
@@ -14,6 +14,7 @@
   color: rgb(33, 17, 122);
   font-family: cursive;
   font-size: xx-large;
+  opacity: .9;
 }
 
 .App-title {

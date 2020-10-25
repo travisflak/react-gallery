@@ -12,6 +12,7 @@ photoGallery = () => {
         return(
             <>
                 <div>
+                    {/* use map to loop through */}
                     {this.props.galleryArray.map((photo) => {
                         return <GalleryItem photo={photo} refreshImage={this.props.refreshImage}/>  
                     })}
