@@ -1,4 +1,24 @@
 .photoWrapper {
-    border: 50px solid black;
-    display: inline-block;
+    background-color: #fd92cf;
+  color: rgb(46, 45, 133);
+  padding: 20px;
+  text-align: center;
+  text-decoration-style: wavy;
+  display: inline-block;
+  font-size: 16px;
+  margin: 16px 8px;
+}
+
+img {
+    border: 5px solid rgb(204, 78, 183);
+    border-radius: 50%;
+  }
+
+button {
+    color: rgb(76, 1, 146);
+    border-color: rgb(80, 0, 184);
+}
+
+p {
+    background-color: rgb(219, 247, 248);
 }
