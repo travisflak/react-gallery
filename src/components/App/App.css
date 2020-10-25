@@ -2,6 +2,11 @@
   text-align: center;
 }
 
+.container {
+  background-image: url('/images/flowers_design.png');
+  background-size: 100px 80px;
+}
+
 .App-header {
   background-color: rgb(194, 255, 255);
   height: 140px;

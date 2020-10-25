@@ -33,6 +33,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div className="container">
         <header className="App-header">
           <h1 className="App-title">Gallery of Images</h1>
         </header>
@@ -40,6 +41,7 @@ class App extends Component {
         <p>
         <GalleryList galleryArray = {this.state.imagesGallery} refreshImage = {this.getGalleryData}/>
         </p>
+        </div>
       </div>
     );
   }
