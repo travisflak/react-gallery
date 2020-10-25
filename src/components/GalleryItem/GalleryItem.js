@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import axios from 'axios';
+import './GalleryItem.css'; //import the GalleryItem.css file to do styling
 
 class GalleryItem extends Component {
 
@@ -41,14 +42,12 @@ class GalleryItem extends Component {
 
         render() {
             return(
-        
-                    <div className="photoWrapper">
-                        {this.renderImage()}
-                        <br/>
-                    <button onClick={this.photoGallery}>love it!</button>
-                        <p>{this.props.photo.likes}</p>
-                    </div>
-            
+                <div className="photoWrapper">
+                    {this.renderImage()}
+                    <br/>
+                <button onClick={this.photoGallery}>love it!</button>
+                    <p>{this.props.photo.likes}</p>
+                </div>
             )
         }
     }

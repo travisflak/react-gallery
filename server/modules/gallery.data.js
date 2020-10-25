@@ -1,8 +1,8 @@
 const galleryItems = [
-    { id: 1, path: 'images/goat_small.jpg', description: 'Photo of a goat taken at Glacier National Park.', likes: 0 },
-    { id: 2, path: 'images/dog_photo.jpg', description: 'Photo of a dog taken in the backyard.', likes: 0 },
-    { id: 3, path: 'images/cat_photo.jpeg', description: 'Photo of a cat taken at the mall.', likes: 0 },
-    { id: 4, path: 'images/woodpecker_photo.jpg', description: 'Photo of a woodpecker pecking on a tree.', likes: 0 }
+    { id: 1, path: 'images/1.png', description: 'Image of a dog in a yard.', likes: 0 },
+    { id: 2, path: 'images/2.png', description: 'Image of a pixelated cat.', likes: 0 },
+    { id: 3, path: 'images/3.png', description: 'Image of a woodpecker pecking on a tree.', likes: 0 },
+    { id: 4, path: 'images/4.png', description: 'Image of delicious coffee in a mug.', likes: 0 }
 ];
 
 module.exports = galleryItems;
