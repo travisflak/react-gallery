@@ -28,7 +28,7 @@ class GalleryItem extends Component {
     photoGallery = () => {
         axios({
             method: 'PUT',
-            url: `/gallery/like/${this.props.photo.id}`
+            url: `/api/images/like/${this.props.photo.id}`
           }).then((response) => {
             console.log('response', response.data);
             this.props.refreshImage(); //page refreshes automatically without the user needing to refresh it

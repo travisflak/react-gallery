@@ -20,7 +20,7 @@ class App extends Component {
     console.log('in getGalleryData');
     axios({
       method: 'GET',
-      url: '/gallery'
+      url: '/api/images'
     }).then((response) => {
       console.log('response', response.data);
       this.setState({
